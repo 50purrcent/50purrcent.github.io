@@ -8,7 +8,7 @@ body {
 }
 
 	li a:visited {
-		color: ##F08262;
+		color: #F08262;
 	}
 
 	li a:hover {
@@ -17,7 +17,7 @@ body {
 
 	li a {
 		text-decoration: none;
-		color: inherit;
+		color: #F08262;
 	}
 
 
