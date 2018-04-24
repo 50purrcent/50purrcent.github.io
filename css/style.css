@@ -334,11 +334,11 @@ li a {
 }
 
 .accomplishments {
-	width: 350px;
+	width: 45%;
 } 
 
 .goals {
-	width: 300px;
+	width: 45%;
 } 
 
 .cetaris-image {
@@ -374,6 +374,15 @@ body {
 .content {
 	width: 100%;
 	box-shadow: none;
+}
+
+.accomplishments {
+	width: 100%;
+	list-style: outside;
+}
+
+.goals {
+	width: 100%;
 }
 
 
