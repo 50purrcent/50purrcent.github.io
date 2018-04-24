@@ -7,30 +7,20 @@ body {
 	padding:50px 0 50px 0;
 }
 
-	.social li a {
-		color: #F08262;
-
-	}
-
-	li a:hover {
-		opacity: 0.5;
-	}
-
-	li a {
-		text-decoration: none;
-		color: inherit;
-	}
-
-
-
-
-@media only screen and (max-width: 800px){
-    .container { width: 90%; }
-    .intro { 
-    	width: 90%;
-    	padding: 0;
-     }
+.social li a {
+	color: #F08262;
 }
+
+li a:hover {
+	opacity: 0.5;
+}
+
+li a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
 
 
 .content {
@@ -86,7 +76,7 @@ body {
 */
 
 .intro {
-	height: 420px;
+	height: 300px;
 
 }
 
@@ -145,15 +135,63 @@ body {
     }
 
 
+.about-me {
+	padding: 0px 22% 100px 22%;
+}
+
+.about-me p {
+	font-size: 1.2em;
+	line-height: 1.5;
+}
+
+
+ .cta {
+ 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding-top: 30px;
+ }
+
+ .contact-button {
+ 	background-color: #F08262;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 8px;
+    -webkit-transform: scale(1.00);
+	transition: 0.3s;
+}
+
+.cta a:hover {
+	-webkit-transform: scale(1.02);
+	transition: 0.25s;
+	opacity: 0.8;
+
+}
+
+
+
 
 /*
 * === WORK ===
 */
 
+.work {
+	padding-bottom: 120px;
+}
+
+
+
 .worktitle {
-	display: flex;
-	flex-direction: column;
-	padding: 0px 0 0px 22%;
+	padding: 0px 22%;
+	font-family: 'Merriweather', serif;
+	font-size: 1.2em;
+	color: #B1B1B1;
+
 }
 
 .abouttitle {
@@ -166,71 +204,42 @@ body {
 	font-family: 'Merriweather', serif;
 	color: #B1B1B1;
 	font-size: 1.2em;
-	padding-bottom: 5px;
 
 }
 
 
+
+.project:hover {
+	opacity: 0.5;
+
+}
+
+.project-link {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+.project-image {
+	max-width: 600px;
+	max-width: 100%;
+	padding-top: 20px;
+}
+
 .project-name {
-	padding-top: 15px;
+	padding: 15px 22% 0 22%;
 	font-size: 2em;
 }
 
 .project-description {
-	padding-top: 5px;
+	padding: 5px 22% 0 22%;
 	font-family: 'Merriweather', serif;
 	color: #F08262;
 	font-size: 1.2em;
 
 }
 
-.projects-container a {
-	text-decoration: none;
-	color: inherit;
 
-}
-
-
-.projects-container {
-	display: flex;
-	flex-direction: column;
-	padding: 0px 22% 0px 22%;
-
-}
-
-.project {
-	height: 300px;
-	width: 100%;
-	padding: 20px 0px 100px 0px;
-	-webkit-transform: scale(1.00);
-	transition: 0.3s;
-}
-
-.project:hover {
-	-webkit-transform: scale(1.02);
-	transition: 0.25s;
-
-}
-
-.project-image {
-	background-color: #F1F1F1;
-	height: 300px;
-}
-
-
-/*
-* === ABOUT ME ===
-*/
-
-
-.about-me {
-	padding: 0px 22% 100px 22%;
-}
-
-.about-me p {
-	font-size: 1.2em;
-	line-height: 1.5;
-}
 
 
 
@@ -309,6 +318,8 @@ body {
 	padding: 0px 22% 60px 22%;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	font-family: 'Merriweather', serif;
 	color: #AFAEAE;
 	font-size: 1em;
@@ -322,7 +333,11 @@ body {
 }
 
 .accomplishments {
-	padding-right: 60px;
+	width: 350px;
+} 
+
+.goals {
+	width: 300px;
 } 
 
 .cetaris-image {
@@ -340,6 +355,27 @@ body {
 	padding-left: 5px;
 	text-decoration: none;
 	color: inherit;	
+}
+
+
+
+/*
+* ============================================ MEDIA QUERIES ====================================================
+*/
+
+@media screen and (max-width: 768px){
+
+body {
+	background-color: blue;
+	padding: 0;
+}
+
+.content {
+	width: 100%;
+	box-shadow: none;
+}
+
+
 }
 
 
